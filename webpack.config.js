@@ -1,8 +1,6 @@
 const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  mode: "development",
   entry: {
     index: "./lib/index.tsx"
   },
@@ -19,13 +17,7 @@ module.exports = {
       }
     ]
   },
-  plugins: [
-    new HtmlWebpackPlugin({
-      title: "React UI",
-      template: "./index.html"
-    })
-  ],
   resolve: {
-    extensions: ['.js', '.jsx', '.ts', '.tsx']
-  }
+    extensions: [".js", ".jsx", ".ts", ".tsx"]
+  },
 };
