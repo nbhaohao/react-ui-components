@@ -24,5 +24,8 @@ module.exports = {
       title: "React UI",
       template: "./index.html"
     })
-  ]
+  ],
+  resolve: {
+    extensions: ['.js', '.jsx', '.ts', '.tsx']
+  }
 };
