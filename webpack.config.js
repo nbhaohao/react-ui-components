@@ -13,7 +13,22 @@ module.exports = {
     rules: [
       {
         test: /\.tsx?$/,
-        loader: "awesome-typescript-loader"
+        loader: "awesome-typescript-loader",
+        options: {
+          useBabel: true,
+          babelOptions: {
+            babelrc: false /* Important line */,
+            plugins: [
+              [
+                "@babel/plugin-transform-runtime",
+                {
+                  corejs: 3
+                }
+              ]
+            ]
+          },
+          babelCore: "@babel/core"
+        }
       }
     ]
   },
