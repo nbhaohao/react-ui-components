@@ -12,6 +12,10 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.svg$/,
+        loader: "svg-sprite-loader"
+      },
+      {
         test: /\.tsx?$/,
         loader: "awesome-typescript-loader",
         options: {
@@ -34,5 +38,5 @@ module.exports = {
   },
   resolve: {
     extensions: [".js", ".jsx", ".ts", ".tsx"]
-  },
+  }
 };
