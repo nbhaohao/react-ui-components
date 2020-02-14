@@ -1,13 +1,13 @@
 import React from "react";
-import "./importIcons";
-import "./icon.scss";
-import { classes } from "./_utils/classes";
+import "@utils/importIcons";
+import "./index.scss";
+import { classes } from "@utils/classes";
 
 interface IconProps extends React.SVGAttributes<SVGElement> {
   name: string;
 }
 
-const Icon: React.FC<IconProps> = ({ name, className, ...svgAttributes }) => {
+const Index: React.FC<IconProps> = ({ name, className, ...svgAttributes }) => {
   return (
     <svg className={classes("react-ui-icon", className)} {...svgAttributes}>
       <use xlinkHref={`#${name}`} />
@@ -15,4 +15,4 @@ const Icon: React.FC<IconProps> = ({ name, className, ...svgAttributes }) => {
   );
 };
 
-export default Icon;
+export default Index;
