@@ -1,4 +1,4 @@
-import { isTruthy } from "@utils/helper";
+import { isTruthy } from "../../_utils/helper";
 
 describe("测试 helper 文件的函数", () => {
   it("isTruthy 接收 Truthy 值返回 true", () => {
