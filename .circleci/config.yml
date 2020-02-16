@@ -31,6 +31,20 @@ jobs:
           root: .
           paths:
             - node_modules
+  build:
+    <<: *defaults
+    steps:
+      - checkout
+      - attach_workspace:
+          at: .
+      - run: yarn build
+      - persist_to_workspace:
+          root: .
+          paths:
+            - dist
+            - package.json
+            - LICENSE
+            - README.md
   test:
     <<: *defaults
     steps:
@@ -40,7 +54,12 @@ jobs:
       - run: yarn test
       - store_test_results:
           path: test-results
-
+  publish:
+    <<: *defaults
+    steps:
+      - attach_workspace:
+          at: .
+      - run: yarn publish
 workflows:
   version: 2
   build_accept_deploy:
@@ -49,3 +68,9 @@ workflows:
       - test:
           requires:
             - prepare
+      - build:
+          requires:
+            - test
+      - publish:
+          requires:
+            - build
