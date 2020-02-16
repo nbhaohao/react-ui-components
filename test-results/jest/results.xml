@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="8" failures="0" time="2.793">
+  <testsuite name="测试 _utils/classes 函数" errors="0" failures="0" skipped="0" timestamp="2020-02-16T02:36:26" time="1.445" tests="4">
+    <testcase classname="测试 _utils/classes 函数 接收一个 className" name="测试 _utils/classes 函数 接收一个 className" time="0.002">
+    </testcase>
+    <testcase classname="测试 _utils/classes 函数 接收一个 className 并过滤掉非 Truthy 值" name="测试 _utils/classes 函数 接收一个 className 并过滤掉非 Truthy 值" time="0">
+    </testcase>
+    <testcase classname="测试 _utils/classes 函数 接收多个 className" name="测试 _utils/classes 函数 接收多个 className" time="0.001">
+    </testcase>
+    <testcase classname="测试 _utils/classes 函数 接收多个 className 并过滤掉非 Truthy 值" name="测试 _utils/classes 函数 接收多个 className 并过滤掉非 Truthy 值" time="0">
+    </testcase>
+  </testsuite>
+  <testsuite name="测试 helper 文件的函数" errors="0" failures="0" skipped="0" timestamp="2020-02-16T02:36:26" time="1.437" tests="2">
+    <testcase classname="测试 helper 文件的函数 isTruthy 接收 Truthy 值返回 true" name="测试 helper 文件的函数 isTruthy 接收 Truthy 值返回 true" time="0.003">
+    </testcase>
+    <testcase classname="测试 helper 文件的函数 isTruthy 接收 falsy 值返回 false" name="测试 helper 文件的函数 isTruthy 接收 falsy 值返回 false" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="Icon" errors="0" failures="0" skipped="0" timestamp="2020-02-16T02:36:26" time="1.504" tests="2">
+    <testcase classname="Icon render successfully" name="Icon render successfully" time="0.015">
+    </testcase>
+    <testcase classname="Icon onClick" name="Icon onClick" time="0.008">
+    </testcase>
+  </testsuite>
+</testsuites>
