@@ -1,8 +1,8 @@
 {
   "name": "react-ui-components",
-  "version": "1.0.0",
-  "main": "dist/lib/index.js",
-  "types": "dist/lib/index",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "types": "dist/index",
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack-dev-server --config webpack.config.dev.js",
     "build": "cross-env NODE_ENV=production webpack --config webpack.config.prod.js",
